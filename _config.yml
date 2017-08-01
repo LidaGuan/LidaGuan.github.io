@@ -1,51 +1,44 @@
-name:               "Ink"
-description:        "A minimalistic jekyll theme for humans"
+permalink: /:year-:month-:day/:title/
 
-url:                ""
-author:             "thinker3197"
-email:              "jhondoe@abc.com"
-gravatar_hash:      "205e460b479e2e5b48aec07710c08d50"
-twitter:            "jhondoe"
-email:              "jhondoe@abc.com"
-github:             "jhondoe"
-pinterest:          "jhondoe"
-linkedin:           "jhondoe"
-facebook:           "jhondoe"
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input:  GFM
+  syntax_highlighter: rouge
 
-disqus_shortname:   "thinker3197"
 
-background:         "http://apple.wallpapersfine.com/wallpapers/original/1242x2208/w-5273.jpg"
+paginate: 10
+paginate_path: ":num"
+baseurl: ""
 
-paginate:           5
-paginate_path:      "/page:num/"
 
-baseurl:            ""
-permalink:          /:year/:month/:day/:title/
-
-markdown:           kramdown
-
-nav:
-  - name:           "About"
-    href:           "/about"
-  - name:           "Download"
-    href:           "/releases"
-
-sass:
-  style:            :compressed
 
 defaults:
   -
     scope:
-      path:         ""
-      type:         "pages"
+      path: ""
+      type: "posts"
     values:
-      layout:       "page"
-  -
-    scope:
-      path:         ""
-      type:         "posts"
-    values:
-      layout:       "post"
+      layout: post
+      styles : [highlight.css,post.css]
+      scripts : [post.js]
 
-gems:
-  - jekyll-paginate
+
+
+title: "RainyAlley"
+email: "sincerebravefight@gmail.com"
+description: "Developer"
+github_username:  "WakelessDragon"
+swiftype_searchId: "ncwR9a8S9CTx2q9SgsJm"
+disqus_shortname: "rainyalley"
+
+
+
+
+url: "http://blog.rainyalley.com"
+imgrepo: "http://blog.rainyalley.com/static/img"
+
+
+#url: "http://127.0.0.1:4000"
+#imgrepo: "http://127.0.0.1:4000/static/img"
+
